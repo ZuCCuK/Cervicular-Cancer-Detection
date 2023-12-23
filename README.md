@@ -1,2 +1,0 @@
-# Cervicular-Cancer-Detection
- 
