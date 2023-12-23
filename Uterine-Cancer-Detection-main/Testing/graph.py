@@ -1,0 +1,1 @@
+print(len(['WBC', 'NEU', 'LYM', 'MONO', 'EOS', 'BASO', 'RBC', 'HGB', 'HCT', 'MCV', 'MCH', 'MCHC', 'RDWSD', 'RDWCV', 'PLT', 'MPV', 'PCT', 'PDW', 'NRBC']))

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahim Kanseri</title>
+    <link rel="stylesheet" href="./static/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+
+    <style>
+        .fg{
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+        .GFG {
+            color: white;
+            text-shadow: -2px 2px 0 #000,
+                          2px 2px 0 #000,
+                         2px -2px 0 #000,
+                        -2px -2px 0 #000;
+        }
+    </style>
+    <style>
+        .modal {
+          transition: opacity 0.25s ease;
+        }
+        body.modal-active {
+          overflow-x: hidden;
+          overflow-y: visible !important;
+        }
+      </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white overflow-x-hidden bg-[#F4F5FA]">
+    <div class="header">
+        <div class="inner-header flex">
+            <div>
+                <h1 class="text-6xl  fg GFG" >Tübitak Kan Sonucundan <br>Rahim Kanseri Tespiti</h1>
+                <a href="#test" class="relative inline-block group mt-8 fg font-bold text-3xl">
+                    <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                    <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                    <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                    <span class="relative">Test Et</span>
+                    </span>
+                    <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        
+    </div>
+
+    <div class="contanier mx-auto">
+
+            <div class=" p-10 rounded-xl">
+                <!-- headers content-->
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="max-w-sm font-bold font-sans">
+                        Bu Projenin Amacı Nedir Ve Ne Başarmıştır ? 
+                    </div>
+                    <div class="font-light max-w-lg mt-5 text-sm">
+                        Kanser Hastalarının Kanlarındaki değerlerin, beyaz kan hücreleri vb. , değişeceğini düşünerekten bu projeye giriştik.
+                    </div>
+                </div>
+    
+                <!-- subscriptions -->
+                <div class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
+                    <div class="bg-[#FFFBEC] rounded-xl">
+                        <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                            <h3 class="mt-3 font-semibold text-lg">Neden Rahim Kanseri ?</h3>
+                            <p class="text-sm font-light w-64">Çoğu kadının ve kız çocuklarının canını alan bu kanser türünü, erken tehşisinin ne kadar önemli olduğunu bildiğimiz için hayata geçirme kararı aldık. Tahmin algoritmamızın hatalı tahminini önlemek için sadece rahim kanseri hastalarını baz aldık.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#ECEEFF] rounded-xl">
+                        <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                            <h3 class="mt-3 font-semibold text-lg">Bu Yapay Zekanın <br>Doktorlardan Ne Farkı Var ?</h3>
+                            <p class="text-sm font-light w-64">Şu ana kadar kullanılan Nötrofil/Lenfosit yönteminin aksine yazdığımız model üzerinde bu 2 değer haricinde alakasız olduğunu düşündüğümüz değerlerin etkili bir değişken olduğunu fark ettik. Bu değişkenleri ve kombinasyonları ile makine eğitilip tespit yaptırıyoruz.</p>
+                        </div>
+                    </div>
+    
+                    <div class="bg-[#F9ECFF] rounded-xl">
+                        <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                            <h3 class="mt-3 font-semibold text-lg">Nasıl Tahmin Ediyorsunuz ?</h3>
+                            <p class="text-sm font-light w-64">Kocaeli Üniversitesinden sağladığımız veriler sayesinde kendi yazdığımız bir yapay zeka modelini eğittik. Bu eğittiğimiz model üzerinde geliştirmeler yaparaktan %91,6 seviyesinde isabet ile kanser olup olmadığınızı tespit edebiliyoruz.</p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="container mx-auto">
+                    <div class="bg-black w-max mx-auto mt-12 rounded-xl">
+                        <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                            <h3 class="mt-3 font-semibold text-xl mb-4 text-lg">Örnek Bir Kan Sonucu :</h3>
+                            <img src="./static/exapmle.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col mt-12 justify-center items-center text-center">
+                        <div class="max-w-sm font-bold font-sans">
+                            Peki, biz bu değerlerden hangilerini kullanıyoruz ?
+                        </div>
+                        <div class="font-light max-w-lg mt-5 text-sm">
+                            Neredeyse Hepsini. Farklı farklı yazdığımız algoritmaların ve kombinasyonların her biri farklı değerleri göz önüne alıyor. İsabet oranlarına göre bu algoritmalar , bir oylama yapıp bize ortak fikirlerini tahmin olarak geri veriyorlar ve böylece ana algoritma önem sırasına göre karar veriyor.
+                        </div>
+                    </div>
+
+                    <div class="bg-black w-max mx-auto mt-12 rounded-xl">
+                        <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                            <h3 class="mt-3 font-semibold text-xl mb-8 text-lg">Basitleştirilmiş bir şekilde çalışma prensibi :</h3>
+                            <img src="./static/alg.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col mt-12 justify-center items-center text-center">
+                        <div class="max-w-sm font-bold font-sans">
+                            Kullandığımız Yazılım dili, Modeller, Yöntemler neler ?
+                        </div>
+                        <div class="font-light max-w-lg mt-5 text-sm">
+                            Kodumuz Python ile yazılmıştır, en iyi sonucu bize veren KNN (K-Nearest Neighbors) algoritması ve özelleştirilmiş oylama yöntemi kullanılmıştır.
+                        </div>
+                        <a href="https://github.com/PlatinMavi/Cervicular-Cancer-Detection" class="relative inline-block group mt-8 fg font-bold text-xl">
+                            <span class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                            <span class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                            <span class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
+                            <span class="relative">Meraklısı İçin Kod</span>
+                            </span>
+                            <span class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
+                        </a>
+                    </div>
+
+                    <div class="bg-black w-max mx-auto mt-12 rounded-xl" id="test">
+                        <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                            <h3 class="mt-3 font-semibold text-xl mb-8 text-lg">Kan Değerleriniz ile Test Edin:</h3>
+                            <div class="grid grid-cols-4 w-full gap-4 text-center">
+                                <input type="text" name="WBC" placeholder="WBC" id="WBC" class="text-center">
+                                <input type="text" name="NEU" placeholder="NEU" id="NEU" class="text-center">
+                                <input type="text" name="LYM" placeholder="LYM" id="LYM" class="text-center">
+                                <input type="text" name="MONO" placeholder="MONO" id="MONO" class="text-center">
+                                
+                                <input type="text" name="EOS" placeholder="EOS" id="EOS" class="text-center">
+                                <input type="text" name="BASO" placeholder="BASO" id="BASO" class="text-center">
+                                <input type="text" name="RBC" placeholder="RBC" id="RBC" class="text-center">
+                                <input type="text" name="HGB" placeholder="HGB" id="HGB" class="text-center">
+
+                                <input type="text" name="HCT" placeholder="HCT" id="HCT" class="text-center">
+                                <input type="text" name="MCV" placeholder="MCV" id="MCV" class="text-center">
+                                <input type="text" name="MCH" placeholder="MCH" id="MCH" class="text-center">
+                                <input type="text" name="MCHC" placeholder="MCHC" id="MCHC" class="text-center">
+
+                                <input type="text" name="RDWSD" placeholder="RDWSD" id="RDWSD" class="text-center">
+                                <input type="text" name="RDWCV" placeholder="RDWCV" id="RDWCV" class="text-center">
+                                <input type="text" name="PLT" placeholder="PLT" id="PLT" class="text-center">
+                                <input type="text" name="MPV" placeholder="MPV" id="MPV" class="text-center">
+
+                                <input type="text" name="PCT" placeholder="PCT" id="PCT" class="text-center">
+                                <input type="text" name="PDW" placeholder="PDW" id="PDW" class="text-center">
+                                <input type="text" name="NRBC" placeholder="NRBC" id="NRBC" class="text-center">
+                                <button type="submit" class="border rounded-xl border-black " onclick="predict()">Test Et</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col mt-24 justify-center items-center text-center">
+                        <div class="max-w-sm font-bold font-sans">
+                            Peki Biz kimiz ? 
+                        </div>
+                        <div class="font-light max-w-lg mt-5 text-sm">
+                            Kocaeli/İzmit Muammer Dereli Fen Lisesi 11. sınıf Öğrencileri:
+                        </div>
+                    </div>
+        
+                    <!-- subscriptions -->
+                    <div class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
+                        <div class="bg-[#FFFBEC] rounded-xl">
+                            <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                                <h3 class="mb-3 font-semibold text-lg">Ali Asaf Usta</h3>
+                                <img src="./static/bread.png" alt="" class="w-64 h-64 object-cover rounded-2xl">
+                            </div>
+                        </div>
+    
+                        <div class="bg-[#ECEEFF] rounded-xl">
+                            <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                                <h3 class="mb-3 font-semibold text-lg">Alper Gezer</h3>
+                                <img src="./static/bread.png" alt="" class="w-64 h-64 object-cover rounded-2xl">
+                            </div>
+                        </div>
+        
+                        <div class="bg-[#F9ECFF] rounded-xl">
+                            <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
+                                <h3 class="mb-3 font-semibold text-lg">Sinan Can Altay</h3>
+                                <img src="./static/bread.png" alt="" class="w-64 h-64 object-cover rounded-2xl">
+                            </div>
+                        </div>
+        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- MODAL -->
+        <div class="modal fg opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+            <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+            
+            <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+            
+            <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                </svg>
+                <span class="text-sm">(Esc)</span>
+            </div>
+        
+            <!-- Add margin if you want to see some of the overlay behind the modal-->
+            <div class="modal-content py-4 text-left px-6">
+                <!--Title-->
+                <div class="flex justify-between items-center pb-3">
+                <p class="text-2xl font-bold">Test Sonuçları :</p>
+                <div class="modal-close cursor-pointer z-50">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                    </svg>
+                </div>
+                </div>
+        
+                <!--Body-->
+                <div id="body-modal"></div>
+                
+        
+                <!--Footer-->
+                <div class="flex justify-end pt-2">
+                <button class="modal-close px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Kapat</button>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+        <script src="./static/index.js"></script>
+
+</body>
+</html>
